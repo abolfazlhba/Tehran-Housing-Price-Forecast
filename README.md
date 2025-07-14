@@ -31,13 +31,7 @@ The goal is to predict the house price based on features like:
 
 ## 📊 Main Results
 
-| Model | R2 Score | MAE |
-|-------|----------|-----|
-| Linear Regression | 0.71 | ~1,000,000,000 |
-| Polynomial Regression (deg=2) | 0.80 | ~900,000,000 |
-| Ridge Regression | 0.77 | ~950,000,000 |
-| Lasso Regression | 0.74 | ~980,000,000 |
-| Random Forest | 0.85 | ~850,000,000 |
+
 
 ✅ **Residual Plot:**  
 ![](results/plots/residual_plot.png)
