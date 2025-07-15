@@ -33,8 +33,6 @@ The goal is to predict the house price based on features like:
 
 
 
-## 🚫 Limitations
-
 - The current models have high MAE (~1 billion IRR) across all approaches tested (Linear, Polynomial, Ridge, Lasso, Random Forest, ElasticNet).
 - The main reason is the lack of rich and clean data. For example:
   - No features like building age, floor level, or renovation status.
@@ -43,6 +41,10 @@ The goal is to predict the house price based on features like:
 - With more detailed data and proper feature engineering, the accuracy can significantly improve.
 
 ---
+**Outlier Removal:**  
+By removing ~10% of samples detected as outliers using Isolation Forest, the MAE dropped significantly from ~1 billion IRR to ~575 million IRR in Gradient Boosting Regression.  
+This shows that proper data cleaning and outlier handling can greatly improve model performance.
+## 🚫 Limitations
 
 ## 🔭 Next Steps
 
