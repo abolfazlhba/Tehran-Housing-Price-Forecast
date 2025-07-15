@@ -33,8 +33,23 @@ The goal is to predict the house price based on features like:
 
 
 
-✅ **Residual Plot:**  
-![](results/plots/residual_plot.png)
+## 🚫 Limitations
+
+- The current models have high MAE (~1 billion IRR) across all approaches tested (Linear, Polynomial, Ridge, Lasso, Random Forest, ElasticNet).
+- The main reason is the lack of rich and clean data. For example:
+  - No features like building age, floor level, or renovation status.
+  - Location is very general (only neighborhood average).
+  - Possible outliers that impact the target price.
+- With more detailed data and proper feature engineering, the accuracy can significantly improve.
+
+---
+
+## 🔭 Next Steps
+
+- Collect more detailed features.
+- Try advanced models (Gradient Boosting, XGBoost).
+- Perform more robust outlier detection.
+- Tune hyperparameters with GridSearch or RandomizedSearch.
 
 ---
 
