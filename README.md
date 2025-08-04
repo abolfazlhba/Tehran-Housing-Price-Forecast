@@ -4,6 +4,45 @@ This project predicts housing prices in Tehran using various Machine Learning re
 
 ---
 
+🏗️ Final Integration: HousingForecast Meta-Model
+At the end of the project, I developed a final stacked model called HousingForecast.
+It combines three base models — Random Forest, ElasticNet, and XGBoost — using a Linear Regression meta-learner.
+
+📊 Results:
+
+Mean Absolute Error (MAE): ~1,000,000,000 IRR
+
+R² Score: 0.8432
+
+After applying Isolation Forest and removing ~10% of the most extreme outliers:
+
+MAE improved to ~575,000,000 IRR
+
+The prediction range became more realistic
+
+🚧 Limitations faced:
+
+Small dataset (~300 samples)
+
+Highly skewed target values (from 66 million to 66 billion IRR)
+
+Missing critical features such as:
+
+Building age
+
+Floor level
+
+Renovation history
+
+Accurate geographic coordinates (only average neighborhood price was used)
+
+📌 Conclusion:
+Despite the limitations, the stacking approach showed a meaningful performance boost. The results highlight how much cleaner data and richer features can improve regression models in real estate prediction tasks.
+
+If I get access to more detailed property data in the future, I plan to revisit this project and push the model performance further.
+
+
+
 ## 📂 Project Overview
 
 The goal is to predict the house price based on features like:
