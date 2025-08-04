@@ -51,7 +51,6 @@ The goal is to predict the house price based on features like:
 - `Parking` (parking availability)
 - `Warehouse` (storage availability)
 - `Elevator` (elevator availability)
-- `MeanPriceA` (average price of the neighborhood)
 
 ---
 
